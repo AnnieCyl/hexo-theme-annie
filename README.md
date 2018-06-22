@@ -1,21 +1,21 @@
-# hexo-theme-dxx
+# hexo-theme-annie
 
-基于[hugo-theme-cactus-plus](https://github.com/nodejh/hugo-theme-cactus-plus)修改,cactus-plus是一个hugo theme
+Based on [hexo-theme-dxx](https://shakalaka.xyz/hexo-theme-dxx/)
 
 ## Live Preview
 
-[demo](https://shakalaka.xyz/hexo-theme-dxx/) 
+[demo](http://anniecyl.github.io) 
 
 ## Installation
 
 plugin dependencies:
 
-- hexo-renderer-pug
-- hexo-wordcount
+- npm install hexo-renderer-pug
+- npm install hexo-wordcount
 
 clone theme
 
-    git clone https://github.com/fuzhouxxdong/hexo-theme-dxx.git themes/dxx
+    git clone https://github.com/AnnieCyl/hexo-theme-annie.git themes/annie
 
 upgrade
 
