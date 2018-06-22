@@ -5,13 +5,13 @@ block content
     section#wrapper.home
 
         div.archive
-            h3!='~yeah~baby~'
+            h3!='Don\'t worry, be happy~'
             each item in site.posts.sort('date', -1).toArray()
               - var postTitle = item.title || 'No Title'
-              - var createDate = date(item.date, 'MMM DD')
+              - var createDate = date(item.date, 'YYYY-MM-DD')
               ul
                   div.post-item
-                      div.post-time=createDate
+                      div.post-time(style='width:100px')=createDate
                       if item.link
                           a.post-link(href=url_for(item.link))= postTitle
                       else
