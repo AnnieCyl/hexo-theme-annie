@@ -6,16 +6,20 @@ block content
 
         div.archive
             h3!='Don\'t worry, be happy~'
-            each item in site.posts.sort('date', -1).toArray()
-              - var postTitle = item.title || 'No Title'
-              - var createDate = date(item.date, 'YYYY-MM-DD')
-              ul
+            each posts, year in _.groupBy(site.posts.sort('date', -1).toArray(), function(p){return -p.date.format('YYYY')})
+              h5=-year
+              for item in posts
+                - var postTitle = item.title || 'No Title'
+                - var createDate = date(item.date, 'MM-DD')
+                ul
                   div.post-item
-                      div.post-time(style='width:100px')=createDate
-                      if item.link
-                          a.post-link(href=url_for(item.link))= postTitle
-                      else
-                          a.post-link(href=url_for(item.path))= postTitle
+                    div.post-time(style='width:50px')=createDate
+                    if item.link
+                        a.post-link(href=url_for(item.link))= postTitle
+                    else
+                        a.post-link(href=url_for(item.path))= postTitle
+              p
+              
 
 
 

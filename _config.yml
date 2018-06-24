@@ -1,9 +1,12 @@
 
 root: /
 
-Home: /
-Archives: /archives
-About: /about
+menu:
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+  About: /about
 
 language: en
 
