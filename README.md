@@ -19,7 +19,7 @@ clone theme
 
 upgrade
 
-    cd themes/dxx
+    cd themes/annie
     git pull origin master
 
 ## License
